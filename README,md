@@ -1,0 +1,16 @@
+ Smart Dewatering Dashboard (IoT + AI + Solar)
+
+This project is built for *Smart India Hackathon 2025*.  
+It demonstrates a prototype of *Dewatering-as-a-Service (DaaS)* using:
+
+ 🌧 *Rainfall Prediction* → AI/ML Linear Regression
+⚡ *Pump Scheduling* → Solar/Grid/Diesel decision
+🔧 *Predictive Maintenance* → anomaly detection
+💵 *Billing* → pay-per-liter model
+🌍 *Carbon Credits* → CO₂ savings tracking
+📡 *IoT Integration* → Protosy sensors via Firebase
+
+🔹 How to Run Locally
+bash
+pip install -r requirements.txt
+streamlit run app.py
