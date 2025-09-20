@@ -21,12 +21,12 @@ if not firebase_admin._apps:
 ref = db.reference("sensor_data")
 data = ref.get() or {}
 
-rain = data.get("rainfall", 10)        # mm
-water_level = data.get("water_level", 30)  # %
-pump_current = data.get("pump_current", 10)  # A
+rain = data.get("rainfall", 10)           # mm
+water_level = data.get("water_level", 30) # %
+pump_current = data.get("pump_current", 10) # A
 
 # ---------------- Display Live Sensor Data ---------------- #
-st.header("🌐 Live Sensor Data (from Protosy)")
+st.header("🌐 Live Sensor Data (from Proteus)")
 col1, col2, col3 = st.columns(3)
 col1.metric("🌧 Rainfall (mm)", rain)
 col2.metric("💧 Water Level (%)", water_level)
@@ -82,4 +82,7 @@ st.header("5️⃣ Carbon Credit Tracking")
 diesel_saved = 20  # liters (dummy value)
 emission_factor = 2.68  # kg CO₂ per liter diesel
 co2_saved = diesel_saved * emission_factor
-st.write(f"🌍 Estimated CO
+
+st.write(f"🌍 Estimated CO₂ Savings: {co2_saved:.2f} kg")
+st.write(f"💰 Equivalent Diesel Saved: {diesel_saved} liters")
+
