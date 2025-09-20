@@ -85,4 +85,6 @@ co2_saved = diesel_saved * emission_factor
 
 st.write(f"🌍 Estimated CO₂ Savings: {co2_saved:.2f} kg")
 st.write(f"💰 Equivalent Diesel Saved: {diesel_saved} liters")
+st.secrets["FIREBASE"]["FIREBASE_SERVICE_ACCOUNT"]
+
 
